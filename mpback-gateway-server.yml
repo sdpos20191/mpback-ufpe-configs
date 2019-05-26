@@ -1,0 +1,20 @@
+server:
+  port: 9094
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 9091
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+    
+zuul:
+  routes:
+    agendaUI.serviceId: mpback-ocorrencia-dashboard-server
+  host:
+    socket-timeout-millis: 30000
