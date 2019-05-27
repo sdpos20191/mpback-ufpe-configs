@@ -28,3 +28,10 @@ spring:
     h2:
     console:
       enabled: true
+
+## Configuring info endpoint
+info:
+  app:
+    name: Ocorrencia Server
+    description: Backend do servidor de ocorrencias
+    version: 1.0.0
