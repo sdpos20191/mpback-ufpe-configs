@@ -14,7 +14,21 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
     
 zuul:
-  routes:
-    agendaUI.serviceId: mpback-ocorrencia-dashboard-server
+  ignoredServices: '*'
   host:
-    socket-timeout-millis: 30000
+    max-total-connections: 1000
+    max-per-route-connections: 1000
+  routes:
+    mpback-ocorrencia-server:
+      path: /jpa/ocorrencias/**
+      sensitive-headers: null
+      serviceId: mpback-ocorrencia-server
+      strip-prefix: false
+    
+security:
+  basic:
+    enable: false   
+
+management:
+  security:
+    enabled: false 
