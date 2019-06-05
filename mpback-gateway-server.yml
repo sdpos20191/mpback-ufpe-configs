@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: eureka
+    hostname: eureka-server
     port: 9091
   client:
     registerWithEureka: false
@@ -19,7 +19,7 @@ zuul:
     max-total-connections: 1000
     max-per-route-connections: 1000
   routes:
-    mpback-ocorrencia-server:
+    ocorrencia-server:
       path: /api/v1/**
       sensitive-headers: null
       serviceId: ocorrencia-server
