@@ -20,7 +20,7 @@ zuul:
     max-per-route-connections: 1000
   routes:
     mpback-ocorrencia-server:
-      path: /mongo/**
+      path: /api/v1/**
       sensitive-headers: null
       serviceId: ocorrencia-server
       strip-prefix: false
