@@ -6,7 +6,7 @@ eureka:
     hostname: eureka
     port: 9091
   client:
-    registerWithEureka: true
+    registerWithEureka: false
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
@@ -19,10 +19,9 @@ zuul:
     max-total-connections: 1000
     max-per-route-connections: 1000
   routes:
-    mpback-ocorrencia-server:
+    ocorrencia-server:
       path: /jpa/ocorrencias/**
-      sensitive-headers: null
-      serviceId: mpback-ocorrencia-server
+      serviceId: ocorrencia-server
       strip-prefix: false
     
 security:
