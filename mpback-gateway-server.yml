@@ -19,9 +19,9 @@ zuul:
     max-total-connections: 1000
     max-per-route-connections: 1000
   routes:
-    ocorrencia-server:
+    mpback-ocorrencia-server:
       path: /jpa/ocorrencias/**
-      serviceId: ocorrencia-server
+      serviceId: mpback-ocorrencia-server
       strip-prefix: false
     
 security:
