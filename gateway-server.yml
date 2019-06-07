@@ -1,0 +1,34 @@
+server:
+  port: 9094
+
+eureka:
+  instance:
+    hostname: eureka-server
+    port: 9091
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+    
+zuul:
+  ignoredServices: '*'
+  host:
+    max-total-connections: 1000
+    max-per-route-connections: 1000
+  routes:
+    ocorrencia-server:
+      path: /api/v1/**
+      sensitive-headers: null
+      serviceId: ocorrencia-server
+      strip-prefix: false
+    
+security:
+  basic:
+    enable: false   
+
+management:
+  security:
+    enabled: false
