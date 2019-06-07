@@ -28,11 +28,11 @@ spring:
   h2:
     console:
       enabled: true
-    data:
-      mongodb:
-        host: mongodb
-        port: 27017
-        database: mp_ocorrencias
+  data:
+    mongodb:
+      host: mongodb
+      port: 27017
+      database: mp_ocorrencias
 
 ## Configuring info endpoint
 info:
