@@ -32,3 +32,10 @@ security:
 management:
   security:
     enabled: false
+
+## Configuring info endpoint
+info:
+  app:
+    name: Zuul Server
+    description: JVM-based router and server-side load balancer from Netflix
+    version: 1.0.0
