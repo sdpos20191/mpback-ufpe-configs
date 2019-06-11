@@ -11,3 +11,10 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
+
+## Configuring info endpoint
+info:
+  app:
+    name: Eureka Server
+    description: Server registration and discovery
+    version: 1.0.0
