@@ -33,6 +33,11 @@ spring:
       host: mongodb
       port: 27017
       database: mp_ocorrencias
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
 
 ## Configuring info endpoint
 info:
