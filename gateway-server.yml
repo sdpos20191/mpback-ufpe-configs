@@ -16,7 +16,7 @@ eureka:
 feign:
   client:
     url:
-      TestUrl: http://ocorrencia-server:9093
+      TestUrl: http://ocorrencia-server:9091
     
 zuul:
   ignoredServices: '*'
