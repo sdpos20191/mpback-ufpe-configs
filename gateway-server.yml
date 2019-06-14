@@ -9,14 +9,14 @@ eureka:
     registerWithEureka: false
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      defaultZone: http://eureka-server:9091/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
     
 feign:
   client:
     url:
-      TestUrl: http://ocorrencia-server:9091
+      TestUrl: http://ocorrencia-server:9093
     
 zuul:
   ignoredServices: '*'
