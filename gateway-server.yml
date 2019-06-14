@@ -32,7 +32,7 @@ zuul:
   
 ocorrencia-server:
   ribbon:
-    listOfServers: http://ocorrencia-server:9093
+    listOfServers: http://eureka-server:9091
     
 security:
   basic:
