@@ -2,6 +2,8 @@ server:
   port: 9093
 
 eureka:
+  instance:	
+    hostname: ocorrencia-server
   client:
     registerWithEureka: true
     fetchRegistry: false
