@@ -29,10 +29,6 @@ zuul:
       sensitive-headers: null
       serviceId: ocorrencia-server
       strip-prefix: false
-  
-ocorrencia-server:
-  ribbon:
-    listOfServers: http://eureka-server:9091
     
 security:
   basic:
