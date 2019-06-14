@@ -13,6 +13,11 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
     
+feign:
+  client:
+    url:
+      TestUrl: http://ocorrencia-server:9093
+    
 zuul:
   ignoredServices: '*'
   host:
