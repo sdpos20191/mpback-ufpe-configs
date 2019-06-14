@@ -20,7 +20,7 @@ zuul:
     max-per-route-connections: 1000
   routes:
     ocorrencia-server:
-      path: /api/v1/jpa/ocorrencias/**
+      path: /api/v1/ocorrencias/**
       sensitive-headers: null
       serviceId: ocorrencia-server
       strip-prefix: false
