@@ -7,7 +7,7 @@ eureka:
     port: 9091
   client:
     registerWithEureka: false
-    fetchRegistry: false
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-server:9091/eureka/
   server:
@@ -29,6 +29,10 @@ zuul:
       sensitive-headers: null
       serviceId: ocorrencia-server
       strip-prefix: false
+  
+ocorrencia-server:
+  ribbon:
+    listOfServers: http://ocorrencia-server:9093
     
 security:
   basic:
