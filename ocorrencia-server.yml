@@ -2,7 +2,7 @@ server:
   port: 9093
 
 eureka:
-  instance:	
+  instance:
     hostname: eureka-server
     port: 9091
   client:
