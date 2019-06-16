@@ -29,7 +29,11 @@ zuul:
       sensitive-headers: null
       serviceId: ocorrencia-server
       strip-prefix: false
-      
+
+ribbon:
+  eureka:
+    enabled: false
+
 ocorrencia-server:
   ribbon:
     listOfServers: localhost:9093
