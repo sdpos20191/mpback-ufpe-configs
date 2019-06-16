@@ -36,7 +36,7 @@ ribbon:
 
 ocorrencia-server:
   ribbon:
-    listOfServers: localhost:9093
+    listOfServers: ocorrencia-server:9093
     
 security:
   basic:
