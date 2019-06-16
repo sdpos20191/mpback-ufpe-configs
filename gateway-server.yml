@@ -29,6 +29,10 @@ zuul:
       sensitive-headers: null
       serviceId: ocorrencia-server
       strip-prefix: false
+      
+ocorrencia-server:
+  ribbon:
+    listOfServers: localhost:9093
     
 security:
   basic:
