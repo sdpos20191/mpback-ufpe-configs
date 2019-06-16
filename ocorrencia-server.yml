@@ -38,6 +38,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+    
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
 
 ## Configuring info endpoint
 info:
