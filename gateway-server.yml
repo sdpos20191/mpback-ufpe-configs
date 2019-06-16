@@ -29,11 +29,6 @@ zuul:
       sensitive-headers: null
       serviceId: ocorrencia-server
       strip-prefix: false
-      
-logging:
-  level:
-    ROOT: INFO
-    org.springframework.web: DEBUG
     
 security:
   basic:
