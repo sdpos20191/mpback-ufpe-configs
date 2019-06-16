@@ -6,7 +6,7 @@ eureka:
     hostname: eureka-server
     port: 9091
   client:
-    registerWithEureka: true
+    registerWithEureka: false
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-server:9091/eureka/
@@ -25,10 +25,15 @@ zuul:
     max-per-route-connections: 1000
   routes:
     ocorrencia-server:
-      path: /api/v1/**
+      path: /api/v1/ocorrencias/**
       sensitive-headers: null
       serviceId: ocorrencia-server
       strip-prefix: false
+      
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
     
 security:
   basic:
